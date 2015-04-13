@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" href="rrStyleSheet.css">
+</head>
+
+<body>
+<h1>Welcome to John and Isaac's Room Reservation Page!</h1>
+
+
+<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="apiCalls.js"></script>
+<script type="text/javascript" src="testing.js"></script>
+
+<div id="display">
+  
+  <div id="input">
+    
+
+    <select id="selector" onchange="checkSelect()">
+      <option value="forDate">Date</option>
+      <option value="forRoom">Room</option>
+    </select>
+    
+<!--<input type="text" id="userInput" value="">-->
+<button onclick="processSelect()">Enter</button>
+  </div>
+  <!--/input-->
+  <div id="choice">
+  </div>
+  <!--/choice-->
+  
+  <table id="grid">
+
+  </table>
+  
+  
+</div>
+<!--/display-->
+
+<div id="selectors">
+
+
+
+
+</div>
+
+
+
+<button onclick="backwardClick()"> < </button>
+<button onclick="forwardClick()"> > </button>
+
+
+<script type="text/javascript" src="globals.js"></script>
+<script type="text/javascript" src="clientAuth.js"></script>
+<script type="text/javascript" src="makeGrid.js"></script>
+<script src="errorCheck.js"</script>
+
+
+</body>
+
+</html>

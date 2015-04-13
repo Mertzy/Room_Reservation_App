@@ -1,0 +1,37 @@
+function checkForInputErrors() { //this function will check to see if the selection corresponds with the input the user types in
+
+    var error = ""
+
+
+    selectorData = document.getElementById("selector")
+    userInputDate = document.getElementById("userInput")
+
+
+    if errorCheckForDate()==true { //might require multiple ifs
+
+       error = "Input error. The date is not of the correct format."
+
+    }
+
+    else if errorCheckForRoom()==true {
+
+	error = "Input error. The room is not of the correct format."
+	
+	return error
+
+    }
+
+
+
+    return error
+
+}
+
+
+
+function printErrors() { //actually prints the error
+
+    document.getElementById("output").innterHTML = ""
+    document.getElementById("output").innerHTML = checkForInputErrors()
+
+}

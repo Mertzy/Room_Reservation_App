@@ -1,0 +1,29 @@
+How do I add an origin for "webhook notifications from API" 
+   I think I need this for javascript origins
+
+What exactly are APIkeys and client ID's?
+
+What are "underlying recurring events?"
+
+
+
+Things to test - rooms that are reserved weekly, or by appointments. 
+
+Things to think about -
+       When calling the function that fills in conflicts, I will want to have a default date, but one
+         that can be overridden if the users chooses a specific starting date for the grid
+
+
+
+
+
+What do I want to do today?
+     Options 
+     	     - make a drop down tab that allows you to choose room
+     	     - display some kind of grid.
+	     - mess around with table layout a bit
+	     - 
+
+
+
+

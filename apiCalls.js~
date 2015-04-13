@@ -1,0 +1,18 @@
+//This folder contains all functions that require loading the api to get information
+
+makeApiCall = function(){
+    gapi.client.load('calendar', 'v3', function(){
+	var request = gapi.client.calendar.events.list({
+	    //eventually the calender id will have to be chosen based on which calender someone wants to display.
+	    'calendarId' : 'luther.edu_quvl61clrh2gn04kpr49mcg7d8@group.calendar.google.com'})
+	request.execute(function(resp) {
+	    var startTimes = []
+	    var endTimes = []
+	    for(var i=0;i<resp.items.length;i++){
+		startTimes.push(resp.items[i].start.dateTime)
+		endTimes.push(resp.items[i].end.dateTime)
+	    }
+	})
+    })
+	
+}

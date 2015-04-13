@@ -1,0 +1,7 @@
+//var apiKey = "AIzaSyC83HTjOQGAIOlIUO4uhqHGSoWHdY1zieY"
+var scopes = "https://www.googleapis.com/auth/calendar"
+
+
+//var clientId = "288078327177-nfr356lidi7lmj3hdgmirq82650j126a.apps.googleusercontent.com"
+var apiKey = "AIzaSyBqSG3IjmORp5YtLbC3uH-vknUuY0cmsjE"
+var clientId = "757845678130.apps.googleusercontent.com"
